@@ -7,7 +7,7 @@ import { Palette, Film, Megaphone, Target, TrendingUp, ShoppingBag, Code2 } from
 
 const roles = [
   { icon: Palette, label: "Graphic Designer", period: "Dec 2018 — Present" },
-  { icon: Film, label: "2D Animator", period: "Mar 2020 — Present" },
+ 
   { icon: Megaphone, label: "Social Media Marketing Manager", period: "Dec 2021 — Present" },
   { icon: Target, label: "Social Media Ads Manager", period: "Jul 2022 — Present" },
   { icon: TrendingUp, label: "Digital Marketing Specialist", period: "Oct 2022 — Present" },
@@ -30,13 +30,13 @@ export default function About() {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12 grid lg:grid-cols-5 gap-14 items-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 grid lg:grid-cols-5 gap-8 sm:gap-14 items-center">
         {/* Photo */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="lg:col-span-2 lg:order-2"
+          className="w-full lg:col-span-2 lg:order-2"
         >
           <div
             className="relative rounded-2xl overflow-hidden"
@@ -74,7 +74,7 @@ export default function About() {
           initial={{ opacity: 0, x: 30 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="lg:col-span-3 lg:order-1"
+          className="w-full lg:col-span-3 lg:order-1"
         >
           <span
             className="inline-block mb-4 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest"

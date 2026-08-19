@@ -37,11 +37,7 @@ const skillGroups = [
     title: "Video Editing",
     skills: ["Adobe After Effects", "Adobe Premiere Pro", "Video Compositing", "Color Grading", "Short-Form Editing"],
   },
-  {
-    icon: Box,
-    title: "3D & 2D Animation",
-    skills: ["3D Animation", "2D Animation", "Modeling", "Motion Design", "Rendering"],
-  },
+ 
  
     {
     icon: ShoppingBag,
@@ -65,12 +61,12 @@ export default function Skills() {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="max-w-2xl mb-16"
+          className="max-w-2xl mb-10 sm:mb-16"
         >
           <span
             className="inline-block mb-4 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest"
@@ -86,7 +82,7 @@ export default function Skills() {
             className="text-[clamp(2rem,3.5vw,3rem)] font-bold leading-tight mb-4"
             style={{ color: "#E6EDF5", fontFamily: "'Space Grotesk', sans-serif" }}
           >
-            8+ years, Providing{" "}
+            Providing{" "}
             <span
               style={{
                 background: "linear-gradient(135deg, #378ADD 0%, #64B5F6 100%)",
@@ -112,7 +108,7 @@ export default function Skills() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: i * 0.06 }}
-                className="p-6 rounded-2xl"
+                className="p-5 sm:p-6 rounded-2xl"
                 style={{ background: "#0D1420", border: "1px solid rgba(55,138,221,0.15)" }}
               >
                 <div

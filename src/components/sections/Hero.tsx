@@ -126,14 +126,14 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.75 }}
-          className="relative mb-10 overflow-hidden"
+          className="relative w-full min-w-0 mb-10 overflow-hidden"
           style={{
             maskImage: "linear-gradient(90deg, transparent, black 12%, black 88%, transparent)",
             WebkitMaskImage: "linear-gradient(90deg, transparent, black 12%, black 88%, transparent)",
           }}
         >
           <motion.div
-            className="flex items-center gap-3 w-max"
+            className="flex items-center gap-3 w-max max-w-none"
             animate={{ x: ["0%", "-50%"] }}
             transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
           >

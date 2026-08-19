@@ -129,7 +129,7 @@ function ProjectCard({
         </div>
 
         {/* Image area - fixed height, contain so nothing crops badly */}
-        <div className="relative flex items-center justify-center overflow-hidden" style={{ height: "200px" }}>
+        <div className="relative flex items-center justify-center overflow-hidden" style={{ height: "clamp(160px, 48vw, 200px)" }}>
           <img
             src={project.image}
             alt={project.name}
@@ -150,7 +150,7 @@ function ProjectCard({
       </div>
 
       {/* Info */}
-      <div className="flex flex-col flex-1 p-6">
+      <div className="flex flex-col flex-1 p-5 sm:p-6">
         <div className="flex items-start justify-between gap-2 mb-2.5">
           <h3
             className="text-lg font-bold tracking-tight"
@@ -195,16 +195,16 @@ export default function Projects() {
   return (
     <section id="projects" ref={ref} className="relative py-10 sm:py-14 overflow-hidden" style={{ background: "#060B14" }}>
       <div
-        className="absolute top-40 right-[-120px] w-[500px] h-[500px] rounded-full pointer-events-none"
+        className="absolute top-40 right-[-120px] w-[min(500px,100vw)] h-[500px] rounded-full pointer-events-none"
         style={{ background: "radial-gradient(circle, rgba(55,138,221,0.1) 0%, transparent 70%)" }}
       />
 
-      <div className="relative max-w-6xl mx-auto px-6 lg:px-12">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="mb-14"
+          className="mb-10 sm:mb-14"
         >
           <div className="flex items-center gap-3 mb-5">
             <div className="h-px w-10" style={{ background: "#378ADD" }} />

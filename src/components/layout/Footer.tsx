@@ -38,37 +38,7 @@ export default function Footer() {
 
       <div className="relative max-w-6xl mx-auto px-6 lg:px-12 pt-20 pb-8">
         {/* Top: CTA strip */}
-        <div
-          className="flex flex-col md:flex-row items-center justify-between gap-6 mb-16 p-8 rounded-2xl"
-          style={{
-            background: "linear-gradient(135deg, rgba(55,138,221,0.1) 0%, rgba(24,95,165,0.06) 100%)",
-            border: "1px solid rgba(55,138,221,0.2)",
-          }}
-        >
-          <div>
-            <h3
-              className="text-xl sm:text-2xl font-bold mb-1"
-              style={{ color: "#E6EDF5", fontFamily: "'Space Grotesk', sans-serif" }}
-            >
-              Have a project in mind?
-            </h3>
-            <p className="text-sm" style={{ color: "#8B98AC" }}>
-              Let&apos;s talk about how to grow your business online.
-            </p>
-          </div>
-          <button
-            onClick={() => scrollTo("#contact")}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold shrink-0 transition-all duration-300 hover:scale-[1.03]"
-            style={{
-              background: "linear-gradient(135deg, #378ADD 0%, #185FA5 100%)",
-              color: "#F7F9FC",
-              cursor: "pointer",
-            }}
-          >
-            <Mail size={15} />
-            Get In Touch
-          </button>
-        </div>
+     
 
         {/* Columns */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">

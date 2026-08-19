@@ -60,21 +60,21 @@ export default function Contact() {
     <section
       id="contact"
       ref={ref}
-      className="relative py-28 overflow-hidden"
+      className="relative py-10 sm:py-14 overflow-hidden"
       style={{ background: "#060B14" }}
     >
       <div
-        className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[900px] h-[500px] pointer-events-none"
+        className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[min(900px,160vw)] h-[500px] pointer-events-none"
         style={{ background: "radial-gradient(ellipse, rgba(55,138,221,0.14) 0%, transparent 70%)" }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-10 sm:mb-16"
         >
           <span
             className="inline-block mb-4 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest"
@@ -148,24 +148,7 @@ export default function Contact() {
             })}
 
             {/* Social links */}
-            <div className="flex items-center gap-3 mt-2">
-              <a
-                href="https://www.linkedin.com/in/muhammadahmad1104/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105"
-                style={{ background: "rgba(55,138,221,0.1)", border: "1px solid rgba(55,138,221,0.25)" }}
-              >
-                <FaLinkedin size={17} style={{ color: "#64B5F6" }} />
-              </a>
-              <a
-                href="#"
-                className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105"
-                style={{ background: "rgba(55,138,221,0.1)", border: "1px solid rgba(55,138,221,0.25)" }}
-              >
-                <FaInstagram size={17} style={{ color: "#64B5F6" }} />
-              </a>
-            </div>
+           
           </motion.div>
 
           {/* Form */}
@@ -173,7 +156,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 24 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="lg:col-span-3 p-7 rounded-2xl flex flex-col gap-4"
+            className="lg:col-span-3 p-5 sm:p-7 rounded-2xl flex flex-col gap-4"
             style={{ background: "#0D1420", border: "1px solid rgba(55,138,221,0.15)" }}
             onSubmit={handleSubmit}
           >
