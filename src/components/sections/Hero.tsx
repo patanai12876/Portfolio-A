@@ -16,11 +16,10 @@ const headingVariants: Variants = {
 };
 
 const headingWordVariants: Variants = {
-  hidden: { opacity: 0, y: 20, filter: "blur(4px)" },
+  hidden: { opacity: 0, y: 12 },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
     transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] },
   },
 };
