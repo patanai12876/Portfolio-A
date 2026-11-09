@@ -17,16 +17,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Ahmad | Digital Growth Specialist",
+  title: "Muhammad Ahmad | Full-Stack Web Developer",
   description:
-    "Muhammad Ahmad helps businesses grow through strategy, technology, branding, and digital marketing.",
+    "Muhammad Ahmad is a full-stack web developer building modern web experiences with Next.js, React, TypeScript, Node.js, MongoDB, and PostgreSQL.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

@@ -22,7 +22,7 @@ export default function CreativeWork() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   return (
-    <section id="creative-work" ref={ref} className="relative py-28 overflow-hidden" style={{ background: "#060B14" }}>
+    <section id="creative-work" ref={ref} className="relative py-28 overflow-hidden" style={{ background: "#F5F8FC" }}>
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.2]"
         style={{
@@ -45,27 +45,23 @@ export default function CreativeWork() {
             style={{
               background: "rgba(55,138,221,0.1)",
               border: "1px solid rgba(55,138,221,0.25)",
-              color: "#64B5F6",
+              color: "#2269A4",
             }}
           >
             Coming Soon
           </span>
           <h2
             className="text-[clamp(2rem,3.5vw,3rem)] font-bold leading-tight mb-4"
-            style={{ color: "#E6EDF5", fontFamily: "'Space Grotesk', sans-serif" }}
+            style={{ color: "#17263A", fontFamily: "'Space Grotesk', sans-serif" }}
           >
             Creative &amp;{" "}
             <span
-              style={{
-                background: "linear-gradient(135deg, #378ADD 0%, #64B5F6 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
+              style={{ color: "#2269A4" }}
             >
               Marketing Work
             </span>
           </h2>
-          <p className="text-base leading-relaxed" style={{ color: "#8B98AC" }}>
+          <p className="text-base leading-relaxed" style={{ color: "#60738A" }}>
             Design and campaign work is being curated for this section. In the
             meantime, get in touch to see samples directly.
           </p>
@@ -82,7 +78,7 @@ export default function CreativeWork() {
                 transition={{ duration: 0.5, delay: 0.15 + i * 0.1 }}
                 className="relative p-8 rounded-2xl overflow-hidden"
                 style={{
-                  background: "#0D1420",
+                  background: "#FFFFFF",
                   border: "1px dashed rgba(55,138,221,0.3)",
                 }}
               >
@@ -90,20 +86,20 @@ export default function CreativeWork() {
                   className="w-11 h-11 rounded-xl flex items-center justify-center mb-5 mx-auto"
                   style={{ background: "rgba(55,138,221,0.12)", border: "1px solid rgba(55,138,221,0.25)" }}
                 >
-                  <Icon size={20} style={{ color: "#64B5F6" }} />
+                  <Icon size={20} style={{ color: "#2269A4" }} />
                 </div>
                 <h3
                   className="text-base font-bold mb-2"
-                  style={{ color: "#E6EDF5", fontFamily: "'Space Grotesk', sans-serif" }}
+                  style={{ color: "#17263A", fontFamily: "'Space Grotesk', sans-serif" }}
                 >
                   {cat.title}
                 </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#8B98AC" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "#60738A" }}>
                   {cat.desc}
                 </p>
                 <span
                   className="absolute top-4 right-4 flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider"
-                  style={{ color: "#5C8A9E" }}
+                  style={{ color: "#52677F" }}
                 >
                   <Sparkles size={11} />
                   Soon

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F5F8FC;
+  --foreground: #17263A;
+  color-scheme: light;
 }
 
 @theme inline {
@@ -12,22 +13,34 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
+  background:
+    radial-gradient(ellipse 78% 42% at 15% 0%, rgba(55, 138, 221, 0.08), transparent 100%),
+    radial-gradient(ellipse 60% 45% at 92% 48%, rgba(81, 115, 170, 0.05), transparent 100%),
+    linear-gradient(180deg, #F8FAFD 0%, #F1F5FA 54%, #F8FAFD 100%);
+  background-attachment: fixed;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
+
 html,
 body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.portfolio-glow-section {
+  isolation: isolate;
+  background: transparent !important;
+}
+
+.photo-glow-frame {
+  box-shadow: 0 0 36px rgba(54, 135, 229, 0.24), 0 0 72px rgba(111, 73, 192, 0.12);
+  transition: box-shadow 350ms ease;
+}
+
+.photo-glow-frame:hover {
+  box-shadow: 0 0 42px rgba(66, 157, 255, 0.3), 0 0 78px rgba(124, 83, 215, 0.16);
 }

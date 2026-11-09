@@ -3,13 +3,13 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, TrendingUp, ArrowRight } from "lucide-react";
+import { Menu, X, Code2, ArrowRight } from "lucide-react";
 
 const links = [
-  { label: "About Me", href: "#about" },
-  { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "About", href: "#about" },
+  { label: "Expertise", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -118,8 +118,8 @@ export default function Navbar() {
           "
           style={{
             background: scrolled
-              ? "rgba(10,14,20,0.88)"
-              : "rgba(10,14,20,0.55)",
+              ? "rgba(255,255,255,0.96)"
+              : "rgba(255,255,255,0.88)",
             backdropFilter: "blur(20px)",
             WebkitBackdropFilter: "blur(20px)",
             border: scrolled
@@ -170,10 +170,10 @@ export default function Navbar() {
                   "1.5px solid rgba(55,138,221,0.35)",
               }}
             >
-              <TrendingUp
+              <Code2
                 size={17}
                 strokeWidth={2.5}
-                style={{ color: "#64B5F6" }}
+                style={{ color: "#2269A4" }}
               />
             </div>
 
@@ -189,7 +189,7 @@ export default function Navbar() {
                 whitespace-nowrap
               "
               style={{
-                color: "#E6EDF5",
+                color: "#17263A",
                 fontFamily:
                   "'Space Grotesk', sans-serif",
               }}
@@ -223,8 +223,8 @@ export default function Navbar() {
                   "
                   style={{
                     color: isActive
-                      ? "#64B5F6"
-                      : "#8B98AC",
+                      ? "#2269A4"
+                      : "#60738A",
                     fontSize: "0.78rem",
                     letterSpacing: "0.04em",
                     cursor: "pointer",
@@ -280,7 +280,7 @@ export default function Navbar() {
                 border: "none",
               }}
             >
-              Hire Me
+              Let&apos;s Connect
               <ArrowRight size={14} />
             </button>
 
@@ -316,12 +316,12 @@ export default function Navbar() {
               {menuOpen ? (
                 <X
                   size={18}
-                  style={{ color: "#64B5F6" }}
+                  style={{ color: "#2269A4" }}
                 />
               ) : (
                 <Menu
                   size={18}
-                  style={{ color: "#64B5F6" }}
+                  style={{ color: "#2269A4" }}
                 />
               )}
             </button>
@@ -386,7 +386,7 @@ export default function Navbar() {
                 width: "auto",
                 boxSizing: "border-box",
                 background:
-                  "rgba(10,14,20,0.97)",
+                  "rgba(255,255,255,0.99)",
                 backdropFilter: "blur(24px)",
                 WebkitBackdropFilter: "blur(24px)",
                 border:
@@ -433,8 +433,8 @@ export default function Navbar() {
                       "
                       style={{
                         color: isActive
-                          ? "#64B5F6"
-                          : "#E6EDF5",
+                          ? "#2269A4"
+                          : "#17263A",
                         background: isActive
                           ? "rgba(55,138,221,0.1)"
                           : "transparent",
@@ -491,7 +491,7 @@ export default function Navbar() {
                     border: "none",
                   }}
                 >
-                  Hire Me
+                  Let&apos;s Connect
                   <ArrowRight size={15} />
                 </button>
               </div>

@@ -14,10 +14,10 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-       <About />
-      <Services />
       <Projects />
       <Skills />
+      <About />
+      <Services />
       <Contact />
       <Footer />
       <a
@@ -26,7 +26,7 @@ export default function Home() {
         rel="noopener noreferrer"
         aria-label="Chat with Muhammad on WhatsApp"
         title="Chat on WhatsApp"
-        className="fixed right-4 bottom-4 sm:right-6 sm:bottom-6 z-50 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-[#060B14]"
+        className="fixed right-4 bottom-4 sm:right-6 sm:bottom-6 z-50 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-[#F5F8FC]"
         style={{
           background: "#25D366",
           color: "#FFFFFF",
